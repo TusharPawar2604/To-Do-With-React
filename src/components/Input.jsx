@@ -16,13 +16,12 @@ const Input = (props) =>{
         const copytasks = [...tasks];
         copytasks.push(newTasks);
         settasks(copytasks);
-        console.log(copytasks);
         setTitle("");
         }
 
 
     return(
-        <form onSubmit={TaskHandler} className="w-[95%] flex flex-col md:flex-row justify-between px-5 my-[4%]">
+        <form onSubmit={TaskHandler} className="w-[95%]  flex flex-col md:flex-row justify-between px-5 my-[7%]">
                 <input
                 onChange={(e) => setTitle(e.target.value)}
                 value={Title}
