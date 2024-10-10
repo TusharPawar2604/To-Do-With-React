@@ -10,6 +10,11 @@ const Input = (props) =>{
     const TaskHandler = (e) =>{
         e.preventDefault()
     
+        if (!Title.trim()) {
+            alert("Please input some tasks");
+            return;
+        }
+    
         const newTasks = {Title , completed: false}
     
       
